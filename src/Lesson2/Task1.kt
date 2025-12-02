@@ -101,10 +101,10 @@ fun rookOrBishopThreatens(
     rookX: Int, rookY: Int,
     bishopX: Int, bishopY: Int
 ): Int {
-    // Проверяем ладью (по горизонтали или вертикали)
+    // Проверяем ладью
     val rookThreatens = (kingX == rookX) || (kingY == rookY)
 
-    // Проверяем слона (по диагонали)
+    // Проверяем слона
     val bishopThreatens = Math.abs(kingX - bishopX) == Math.abs(kingY - bishopY)
 
     return when {
